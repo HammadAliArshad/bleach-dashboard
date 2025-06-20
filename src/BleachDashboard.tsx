@@ -50,7 +50,7 @@ export default function BleachDashboard() {
     setDetailedView((prev) => !prev);
   };
   return (
-    <Container sx={{width: "50%"}}>
+    <Container sx={{ width: "50%" }}>
       <Typography variant="h4" mt={3} mb={3}>
         Bleach Dashboard
       </Typography>
@@ -71,11 +71,11 @@ export default function BleachDashboard() {
         {users.map((user) => (
           <ListItem key={user.id}>
             {detailedView ? (
-              <Card sx={{width: "100%"}}>
+              <Card sx={{ width: "100%" }}>
                 <CardContent>
                   <Typography variant="h6">{user.name}</Typography>
-                  <Typography variant="h6">Email : {user.email}</Typography>
-                  <Typography variant="h6">Age : {user.age}</Typography>
+                  <Typography>Email : {user.email}</Typography>
+                  <Typography>Age : {user.age}</Typography>
                 </CardContent>
               </Card>
             ) : (
