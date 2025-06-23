@@ -3,6 +3,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import Button from "@mui/material/Button";
 import BleachDashboard from "./BleachDashboard";
+import ClassComponent from "./Component LifeCycle/classComponent";
 
 function App() {
   const [mode, setMode] = useState<"light" | "dark">("light");
@@ -21,9 +22,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
-         {mode === "light" ? "Dark" : "Light"}
+        {mode === "light" ? "Dark" : "Light"}
       </Button>
       <BleachDashboard></BleachDashboard>
+      <ClassComponent></ClassComponent>
     </ThemeProvider>
   );
 }
