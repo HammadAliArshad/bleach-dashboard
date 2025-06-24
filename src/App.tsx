@@ -4,6 +4,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Button from "@mui/material/Button";
 import BleachDashboard from "./BleachDashboard";
 import ClassComponent from "./Component LifeCycle/classComponent";
+import RefDemo from "./Refs/RefDemo";
+import ClickEvent from "./Events/clickEvent";
 
 function App() {
   const [mode, setMode] = useState<"light" | "dark">("light");
@@ -26,6 +28,8 @@ function App() {
       </Button>
       <BleachDashboard></BleachDashboard>
       <ClassComponent></ClassComponent>
+      <RefDemo></RefDemo>
+      <ClickEvent></ClickEvent>
     </ThemeProvider>
   );
 }
